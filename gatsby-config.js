@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: "Firefighters to the rescue",
-    description: "Firefighters to the rescue is a charity helping public servants and their families since 2004",
-    author: `@gatsbyjs`,
+    description:
+      "Firefighters to the rescue is a charity helping public servants and their families since 2004",
+    author: `Cory Wolnewitz`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,7 +25,14 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/ffttrLogo.jpg`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `ajhvil0dwelf`,
+        accessToken: `Uve06x2aowfiVqQuw1hnGukdSJ_SRNPuFcOaWCrvUM4`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

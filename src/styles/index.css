@@ -1,0 +1,16 @@
+body {
+  margin: 0
+}
+
+.navText {
+  height: 15.5px;
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #ffffff;
+  text-transform: uppercase;
+}
