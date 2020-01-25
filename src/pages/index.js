@@ -1,13 +1,17 @@
 import React from "react"
+import { graphql } from "gatsby"
 
-import Navigation from "../components/Navigation"
+import Header from "../components/Header"
 import SEO from "../components/seo"
 
 const IndexPage = ({ data }) => (
   <React.Fragment>
     <SEO title="Home" />
     <div className="home-header">
-      <Navigation data={data.contentfulNavigation} />
+      <Header
+        navData={data.contentfulNavigation}
+        heroData={data.contentfulHeroBannerText}
+      />
     </div>
   </React.Fragment>
 )
@@ -16,16 +20,35 @@ export const pageQuery = graphql`
   query Home {
     contentfulNavigation {
       companyName
-      heroImage {
+      logo {
         description
         file {
           url
         }
       }
-      logo {
-        description
+      heroImage {
         file {
           url
+        }
+      }
+      navItems {
+        linkUrl
+        linkText
+      }
+    }
+    contentfulHeroBannerText {
+      headerDescription {
+        headerDescription
+      }
+      headerText
+      headerLink {
+        linkText
+        linkUrl
+      }
+      bottomTextBlocks {
+        heading
+        description {
+          description
         }
       }
     }

@@ -1,12 +1,9 @@
-.heroImage {
-  background-size: cover;
-}
-
 .topNav {
   height: 100px;
   background: black;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 30px;
 }
 
@@ -21,8 +18,14 @@
   border-radius: 50%;
 }
 
-@media (max-width: 1150px) {
-  .heroImage {
-    background-size: contain;
-  }
+.navItem:last-child {
+  padding: 15px 0px;
+  border: 1px solid #fff;
+  width: 150px;
+  border-radius: 75px;
+  text-align: center;
+}
+
+.navItem:not(:last-child) {
+  padding-right: 8px;
 }

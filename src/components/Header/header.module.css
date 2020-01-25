@@ -1,0 +1,52 @@
+.heroImage {
+  background-size: cover;
+}
+
+.heroTextWrapper {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 100px);
+  color: #fff;
+  margin: auto;
+  text-align: center;
+}
+
+.heroBannerText {
+  font-size: 75px;
+}
+
+.heroInfo {
+  width: 500px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.heroButton {
+  margin: 20px 0 100px;
+  color: #ffffff;
+  background-color: #c6a364;
+  width: 150px;
+  border-radius: 75px;
+  padding: 15px 0;
+}
+
+.bottomHeroWrapper {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  height: 150px;
+  background: black;
+  width: 100%;
+}
+
+.bottomHeroTextBlocks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  height: 100%;
+  margin: auto;
+}
