@@ -52,6 +52,23 @@ export const pageQuery = graphql`
         }
       }
     }
+    contentfulHomepagePeople {
+        people {
+          employment
+          name
+          description {
+            description
+          }
+          thumbnails {
+            title
+            description
+            file {
+              url
+              fileName
+            }
+          }
+        }
+      }
   }
 `
 

@@ -24,6 +24,11 @@
   width: 150px;
   border-radius: 75px;
   text-align: center;
+  transition: all .5s ease-out;
+}
+
+.navItem:last-child:hover {
+  background-color: #c6a364;
 }
 
 .navItem:not(:last-child) {

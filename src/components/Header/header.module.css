@@ -36,17 +36,41 @@
 .bottomHeroWrapper {
   position: absolute;
   bottom: 0;
+  width: 100%;
   color: #fff;
   height: 150px;
   background: black;
-  width: 100%;
 }
 
 .bottomHeroTextBlocks {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 60%;
   height: 100%;
+  width: 75%;
   margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .bottomHeroTextBlocks {
+    width: 75%;
+  }
+}
+
+.bottomTextHeading {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.bottomTextDescription {
+  font-size: 14px;
+}
+
+.bottomTextWrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
 }

@@ -4,7 +4,6 @@ import styles from "./header.module.css"
 import Navigation from "../Navigation"
 
 const Header = ({ navData, heroData }) => {
-  console.log(window.innerWidth)
   return (
     <div
       className={styles.heroImage}
@@ -27,9 +26,9 @@ const Header = ({ navData, heroData }) => {
         <div className={styles.bottomHeroWrapper}>
           <div className={styles.bottomHeroTextBlocks}>
               {heroData.bottomTextBlocks.map(({heading, description}) => (
-                <div>
-                  <div>{heading}</div>
-                  <div>{description.description}</div>
+                <div key={heading} className={styles.bottomTextWrapper}>
+                  <div className={styles.bottomTextHeading}>{heading}</div>
+                  <div className={styles.bottomTextDescription}>{description.description}</div>
                 </div>
               ))}
         </div>
