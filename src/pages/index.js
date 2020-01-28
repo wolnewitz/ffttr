@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Header from "../components/Header"
+import People from "../components/People"
 import SEO from "../components/seo"
 
 const IndexPage = ({ data }) => (
@@ -12,6 +13,7 @@ const IndexPage = ({ data }) => (
         navData={data.contentfulNavigation}
         heroData={data.contentfulHeroBannerText}
       />
+      <People />
     </div>
   </React.Fragment>
 )
