@@ -1,3 +1,3 @@
-import People from "./People.js";
+import People from "./People.js"
 
-export default People;
+export default People

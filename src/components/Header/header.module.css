@@ -1,5 +1,7 @@
 .heroImage {
+  background: linear-gradient(to bottom, transparent 0%, black 100%), url(../../images/heroImage.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .heroTextWrapper {
@@ -8,10 +10,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: calc(100% - 100px);
   color: #fff;
   margin: auto;
   text-align: center;
+  padding: 100px 0;
 }
 
 .heroBannerText {
@@ -25,7 +27,7 @@
 }
 
 .heroButton {
-  margin: 20px 0 100px;
+  margin: 20px 0 0;
   color: #ffffff;
   background-color: #c6a364;
   width: 150px;
@@ -34,8 +36,6 @@
 }
 
 .bottomHeroWrapper {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   color: #fff;
   height: 150px;
@@ -44,16 +44,32 @@
 
 .bottomHeroTextBlocks {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  height: 100%;
+  text-align: center;
   width: 75%;
   margin: auto;
+  padding-top: 40px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .bottomHeroTextBlocks {
-    width: 75%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .bottomHeroTextBlocks {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+  }
+
+  .bottomHeroWrapper {
+    height: auto;
+  }
+
+  .bottomTextWrapper {
+    margin-bottom: 15px;
   }
 }
 
@@ -74,3 +90,30 @@
   justify-content: center;
   width: 250px;
 }
+
+@media (max-width: 660px) {
+  .heroImage {
+    background-position-y: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+ .heroButton {
+   margin: 20px 0;
+ }
+
+ .heroBannerText {
+   font-size: 40px;
+ }
+
+  .heroInfo {
+    width: 75%;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .heroTextWrapper {
+    padding: 20px 0;
+  }
+}
+

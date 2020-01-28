@@ -13,8 +13,8 @@ const IndexPage = ({ data }) => (
         navData={data.contentfulNavigation}
         heroData={data.contentfulHeroBannerText}
       />
-      <People />
     </div>
+    <People />
   </React.Fragment>
 )
 
@@ -55,22 +55,22 @@ export const pageQuery = graphql`
       }
     }
     contentfulHomepagePeople {
-        people {
-          employment
-          name
-          description {
-            description
-          }
-          thumbnails {
-            title
-            description
-            file {
-              url
-              fileName
-            }
+      people {
+        employment
+        name
+        description {
+          description
+        }
+        thumbnails {
+          title
+          description
+          file {
+            url
+            fileName
           }
         }
       }
+    }
   }
 `
 
