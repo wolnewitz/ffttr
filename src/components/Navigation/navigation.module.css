@@ -34,3 +34,23 @@
 .navItem:not(:last-child) {
   padding-right: 8px;
 }
+
+@media (max-width: 500px) {
+.navItem:last-child {
+  width: 100px;
+  border-radius: 75px;
+}
+
+.topNav {
+  padding: 0 20px;
+}
+
+.topNavText {
+  display: none;
+}
+
+.navLogo {
+  width: 65px;
+  height: 65px;
+}
+}

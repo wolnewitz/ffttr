@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => (
       />
     </div>
     <People peopleData={data.contentfulHomepagePeople} />
-    <Footer />
+    <Footer footerData={data.contentfulFooter} />
   </React.Fragment>
 )
 
@@ -83,6 +83,12 @@ export const pageQuery = graphql`
           linkUrl
         }
       }
+    }
+    contentfulFooter {
+      contactUs
+      email
+      phoneNumber
+      socialText
     }
   }
 `
