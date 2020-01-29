@@ -11,15 +11,28 @@ const People = ({ peopleData }) => (
           <div className={styles.description}>
             {person.description.description}
           </div>
-          <a target="_blank" className={styles.donateBtn} href={person.donateLink.linkUrl}>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.donateBtn}
+            href={person.donateLink.linkUrl}
+          >
             {person.donateLink.linkText}
           </a>
         </div>
         <div className={styles.personHalf}>
-          <img className={styles.largeImage} src={person.largeImage.file.url} />
+          <img
+            alt={person.largeImage.description}
+            className={styles.largeImage}
+            src={person.largeImage.file.url}
+          />
           <div className={`flex ${styles.thumbnailsWrapper}`}>
             {person.thumbnails.map(thumbnail => (
-              <img className={styles.thumbnail} src={thumbnail.file.url} />
+              <img
+                alt={thumbnail.description}
+                className={styles.thumbnail}
+                src={thumbnail.file.url}
+              />
             ))}
           </div>
         </div>

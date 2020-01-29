@@ -6,6 +6,7 @@ const NavigationItem = ({ data, lastItem }) => {
     <a
       href={data.linkUrl}
       target={lastItem ? "_blank" : ""}
+      rel={lastItem ? "noopener noreferrer" : ""}
       className={`navText ${styles.navItem}`}
     >
       {data.linkText}
