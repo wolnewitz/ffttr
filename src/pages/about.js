@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 const AboutPage = ({ data }) => (
   <React.Fragment>
-    <SEO title="About" />
+    <SEO title="About Us" />
     <Navigation data={data.contentfulNavigation} />
     <div>About</div>
   </React.Fragment>

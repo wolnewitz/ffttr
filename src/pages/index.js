@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 
 const IndexPage = ({ data }) => (
   <React.Fragment>
-    <SEO title="Home" />
+    <SEO title="FFTTR" />
     <div className="home-header">
       <Header
         navData={data.contentfulNavigation}
