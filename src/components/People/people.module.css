@@ -73,14 +73,11 @@
 
   .wrapper {
     padding: 40px 20px;
+    width: calc(100% - 40px);
   }
 
   .donateBtn {
     margin: 30px auto
-  }
-
-  .wrapper {
-    width: 100%;
   }
 }
 
