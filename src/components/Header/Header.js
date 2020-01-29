@@ -5,9 +5,7 @@ import Navigation from "../Navigation"
 
 const Header = ({ navData, heroData }) => {
   return (
-    <div
-      className={styles.heroImage}
-    >
+    <div className={styles.heroImage}>
       <Navigation data={navData} />
       <div className={styles.heroTextWrapper}>
         <div className={styles.heroBannerText}>{heroData.headerText}</div>

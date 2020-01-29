@@ -14,7 +14,7 @@ const IndexPage = ({ data }) => (
         heroData={data.contentfulHeroBannerText}
       />
     </div>
-    <People />
+    <People peopleData={data.contentfulHomepagePeople} />
   </React.Fragment>
 )
 
@@ -68,6 +68,17 @@ export const pageQuery = graphql`
             url
             fileName
           }
+        }
+        largeImage {
+          file {
+            fileName
+            url
+          }
+          description
+        }
+        donateLink {
+          linkText
+          linkUrl
         }
       }
     }
