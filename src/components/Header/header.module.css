@@ -113,11 +113,11 @@
   }
 
   .heroTextWrapper {
-    height: 315px;
+    height: 330px;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .heroTextWrapper {
     height: 200px;
   }
@@ -129,6 +129,11 @@
   .heroButton {
     width: 100px;
     padding: 10px 0;
+  }
+
+  .heroImage {
+    background-size: cover;
+    background-position-y: 75px;
   }
 }
 

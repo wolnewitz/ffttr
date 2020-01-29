@@ -36,21 +36,24 @@
 }
 
 @media (max-width: 500px) {
-.navItem:last-child {
-  width: 100px;
-  border-radius: 75px;
-}
+  .navItem:last-child {
+    width: 100px;
+    border-radius: 75px;
+  }
 
-.topNav {
-  padding: 0 20px;
-}
+  .topNav {
+    padding: 0 20px;
+  }
 
-.topNavText {
-  display: none;
-}
+  .topNavText {
+    display: none;
+  }
 
-.navLogo {
-  width: 65px;
-  height: 65px;
-}
+  .navLogo {
+    width: 55px;
+    height: 55px;
+  }
+  .topNav {
+    height: 75px;
+  }
 }
