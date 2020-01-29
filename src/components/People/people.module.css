@@ -1,7 +1,8 @@
 .wrapper {
   background-image: linear-gradient(to bottom, #ffffff, #f9f9f9);
-  width: 85%;
-  margin: 100px auto 0;
+  width: 100%;
+  margin: auto;
+  padding: 100px 40px;
 }
 
 .personWrapper {
@@ -60,11 +61,19 @@
   }
 
   .personHalf {
-    width: 80%;
+    width: 95%;
     margin-bottom: 15px;
   }
 
+  .description {
+    width: 95%;
+  }
+
   .wrapper {
-    margin-top: 50px;
+    padding: 40px 20px;
+  }
+
+  .donateBtn {
+    margin: 30px auto
   }
 }

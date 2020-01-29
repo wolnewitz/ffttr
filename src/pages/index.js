@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
+import Footer from "../components/Footer"
 import Header from "../components/Header"
 import People from "../components/People"
 import SEO from "../components/seo"
@@ -15,6 +16,7 @@ const IndexPage = ({ data }) => (
       />
     </div>
     <People peopleData={data.contentfulHomepagePeople} />
+    <Footer />
   </React.Fragment>
 )
 

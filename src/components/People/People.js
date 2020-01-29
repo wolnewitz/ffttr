@@ -11,7 +11,7 @@ const People = ({ peopleData }) => (
           <div className={styles.description}>
             {person.description.description}
           </div>
-          <a className={styles.donateBtn} href={person.donateLink.linkUrl}>
+          <a target="_blank" className={styles.donateBtn} href={person.donateLink.linkUrl}>
             {person.donateLink.linkText}
           </a>
         </div>
