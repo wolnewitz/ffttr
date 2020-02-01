@@ -8,6 +8,7 @@
 .personWrapper {
   display: flex;
   color: #1f313d;
+  margin-bottom: 100px;
 }
 
 .personHalf {
@@ -17,6 +18,7 @@
 .name {
   font-size: 42px;
   padding-bottom: 10px;
+  font-family: 'Playfair Display', serif;
 }
 
 .employment {
@@ -26,7 +28,6 @@
 }
 
 .description {
-  width: 80%;
   line-height: 1.56;
   opacity: 0.8;
 }
@@ -35,10 +36,14 @@
   display: block;
   object-fit: contain;
   width: 100%;
+  max-width: 500px;
+  max-height: 500px;
 }
 
 .thumbnail {
   margin-right: 20px;
+  max-width: 100px;
+  max-height: 100px;
 }
 
 .thumbnailsWrapper {
@@ -58,13 +63,13 @@
 
 @media (max-width: 760px) {
   .personWrapper {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    margin-bottom: 15px !important;
   }
 
   .personHalf {
     width: 95%;
-    margin-bottom: 15px;
+    margin: 0 0 15px !important;
   }
 
   .description {

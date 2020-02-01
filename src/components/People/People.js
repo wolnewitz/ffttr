@@ -3,9 +3,15 @@ import styles from "./people.module.css"
 
 const People = ({ peopleData }) => (
   <div className={styles.wrapper}>
-    {peopleData.people.map(person => (
+    {peopleData.people.map((person, i) => (
       <div className={styles.personWrapper} key={person.name}>
-        <div className={styles.personHalf}>
+        <div
+          style={{
+            order: i % 2 === 0 ? 0 : 1,
+            [`margin${i % 2 === 0 ? "Right" : "Left"}`]: 66,
+          }}
+          className={styles.personHalf}
+        >
           <div className={styles.name}>{person.name}</div>
           <div className={styles.employment}>{person.employment}</div>
           <div className={styles.description}>
@@ -20,7 +26,7 @@ const People = ({ peopleData }) => (
             {person.donateLink.linkText}
           </a>
         </div>
-        <div className={styles.personHalf}>
+        <div style={{ order: 0 }} className={styles.personHalf}>
           <img
             alt={person.largeImage.description}
             className={styles.largeImage}

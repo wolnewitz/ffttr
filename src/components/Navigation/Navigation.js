@@ -14,9 +14,12 @@ const NavigationItem = ({ data, lastItem }) => {
   )
 }
 
-const Navigation = ({ data }) => {
+const Navigation = ({ data, transparent }) => {
   return (
-    <div className={styles.topNav}>
+    <div
+      style={{ backgroundColor: transparent ? "transparent" : "black" }}
+      className={styles.topNav}
+    >
       <div className="flex items-center">
         <a href="/">
           <img
