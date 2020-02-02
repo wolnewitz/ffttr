@@ -11,7 +11,11 @@ const AboutPage = ({ data }) => (
     <SEO title="About Us" />
     <Navigation transparent data={data.contentfulNavigation} />
     <div className={styles.heroWrapper}>
-      <img className={styles.heroImage} src={aboutHeader} />
+      <img
+        alt="fire on a hill"
+        className={styles.heroImage}
+        src={aboutHeader}
+      />
       <div className={styles.heroTextWrapper}>
         <div className={styles.headline}>About Us</div>
         <div className={styles.address1}>10173 150th Court North</div>
