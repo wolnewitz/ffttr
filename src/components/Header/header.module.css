@@ -25,6 +25,7 @@
   width: 500px;
   font-size: 20px;
   margin-top: 10px;
+  line-height: 1.4;
 }
 
 .heroButton {
@@ -82,6 +83,7 @@
 
 .bottomTextDescription {
   font-size: 14px;
+  line-height: 1.43;
 }
 
 .bottomTextWrapper {

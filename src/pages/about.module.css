@@ -1,19 +1,54 @@
 .headline {
-  color: black;
+  color: white;
   font-family: 'Playfair Display', serif;
   font-size: 52px;
   text-align: center;
+  margin-bottom: 25px;
+}
+
+.heroWrapper {
+  position: relative;
+  top: -100px;
+  height: calc(100% - 100px);
+  width: 100%;
+  margin: auto;
+}
+
+.heroTextWrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 30%;
+  z-index: 1;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.heroWrapper:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -5px;
+  left: 0;
+  opacity: 0.5;
+  background-color: #3c3d41;
 }
 
 .quoteSection {
   max-width: 70%;
-  margin: 30px auto;
+  margin: -50px auto 30px ;
 }
 
 .headerSectionText {
   font-size: 25px;
   font-weight: 300;
   color: #193f58;
+  line-height: 1.19;
 }
 
 .subHeaderText {
@@ -77,6 +112,12 @@
   color: #193f58;
 }
 
+.address1, .address2, .phone, .email {
+  line-height: 1.56;
+  color: #ffffff;
+  text-align: center;
+}
+
 @media (max-width: 700px) {
   .quoteSection {
     max-width: 95%;
@@ -90,3 +131,20 @@
     margin: 15px 0 0;
   }
 }
+
+@media (max-width: 500px) {
+  .heroTextWrapper {
+    top: 40%;
+  }
+
+  .headline {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .address1, .address2, .phone, .email {
+    font-size: 14px;
+    line-height: normal;
+  }
+}
+

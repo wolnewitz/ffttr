@@ -4,13 +4,21 @@ import { graphql } from "gatsby"
 import Navigation from "../components/Navigation"
 import SEO from "../components/seo"
 import styles from "./about.module.css"
+import aboutHeader from "../images/aboutHeader.jpg"
 
 const AboutPage = ({ data }) => (
   <React.Fragment>
     <SEO title="About Us" />
     <Navigation transparent data={data.contentfulNavigation} />
     <div className={styles.heroWrapper}>
-      <div className={styles.headline}>About Us</div>
+      <img className={styles.heroImage} src={aboutHeader} />
+      <div className={styles.heroTextWrapper}>
+        <div className={styles.headline}>About Us</div>
+        <div className={styles.address1}>10173 150th Court North</div>
+        <div className={styles.address2}>Jupiter, Florida 33478</div>
+        <div className={styles.phone}>561-662-5516</div>
+        <div className={styles.email}>firefighterstotherescue@comcast.net</div>
+      </div>
     </div>
     <div className={styles.quoteSection}>
       <div className={styles.headerSectionText}>
