@@ -118,6 +118,11 @@
   text-align: center;
 }
 
+.phone {
+  display: block;
+  width: 100%;
+}
+
 @media (max-width: 700px) {
   .quoteSection {
     max-width: 95%;
