@@ -39,26 +39,28 @@ const AboutPage = ({ data }) => (
       </div>
       <div className={styles.foundingSection}>
         <div className={styles.foundingSectionHeadline}>
-          In 2004 Palm Beach Gardens Fire Rescue sponsored our first fundraiser.
+          A year later, Jeremy O’Brien was diagnosed with Guillain Barre’
+          Syndrome.
         </div>
         <div className={styles.foundingSectionBody}>
-          It was for Shawn Thurman, who contracted a rare form of heart cancer.
-          A benefit dinner/auction was held and approximately $50,000 was raised
-          to assist Shawn Thurman with medical bills. Shawn was able to recover
-          and return to work for a short time, but ultimately lost his battle to
-          the cancer in late 2005.
+          Jeremy’s insurance and disability were insufficient to cover the
+          expenses he had incurred. He has four children (one of which was born
+          when Jeremy was in the hospital) that depend on his income. Jeremy’s
+          brother, Jason O’Brien, a Battalion Chief for Palm Beach Gardens Fire
+          Rescue, started a benefit for him with the help of his co-workers. We
+          raised approximately $75,000 to help Jeremy and his family.
         </div>
       </div>
       <div className={styles.foundingSection}>
         <div className={styles.foundingSectionHeadline}>
-          In 2004 Palm Beach Gardens Fire Rescue sponsored our first fundraiser.
+          Then in 2006, the daughter of one of our firefighters had a relapse of
+          Leukemia.
         </div>
         <div className={styles.foundingSectionBody}>
-          It was for Shawn Thurman, who contracted a rare form of heart cancer.
-          A benefit dinner/auction was held and approximately $50,000 was raised
-          to assist Shawn Thurman with medical bills. Shawn was able to recover
-          and return to work for a short time, but ultimately lost his battle to
-          the cancer in late 2005.
+          She required a bone marrow transplant at Duke University in North
+          Carolina. We were able to help their family by covering travel
+          expenses. Unfortunately, the need to raise funds for other public
+          servants, not only with PBGFR, who are in need, continues to this day.
         </div>
       </div>
       <div className={styles.divider}></div>
@@ -81,9 +83,14 @@ const AboutPage = ({ data }) => (
           need with gracious donations from members of the community.
         </div>
       </div>
-        <div className={styles.boardMembers}>
-Our board consists of a President (Mark Joyce), a Vice President (Jason O’Brien), and two board members (Mike Zingaro and Jules Tuman).  These people work tirelessly to help those in need.  If you have any questions about Firefighter’s to the Rescue, Inc., or are considering donating please don’t hesitate to contact any of our board members.  Thank you for taking the time to research the organization.
-        </div>
+      <div className={styles.boardMembers}>
+        Our board consists of a President (Mark Joyce), a Vice President (Jason
+        O’Brien), and two board members (Mike Zingaro and Jules Tuman). These
+        people work tirelessly to help those in need. If you have any questions
+        about Firefighter’s to the Rescue, Inc., or are considering donating
+        please don’t hesitate to contact any of our board members. Thank you for
+        taking the time to research the organization.
+      </div>
     </div>
   </React.Fragment>
 )
