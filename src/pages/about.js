@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import styles from "./about.module.css"
 import aboutHeader from "../images/aboutHeader.jpg"
 
-const AboutPage = ({ data }) => (
+const AboutPage = ({ data }) => {console.log({data});return (
   <React.Fragment>
     <SEO title="About Us" />
     <Navigation transparent data={data.contentfulNavigation} />
@@ -97,6 +97,13 @@ const AboutPage = ({ data }) => (
           need with gracious donations from members of the community.
         </div>
       </div>
+      <div className={styles.aboutLogoWrapper}>
+        <img
+          alt={data.contentfulNavigation.logo.description}
+          className={styles.aboutLogo}
+          src={data.contentfulNavigation.logo.file.url}
+        />
+        </div>
       <div className={styles.boardMembers}>
         Our board consists of a President (Mark Joyce), a Vice President (Jason
         O’Brien), and two board members (Mike Zingaro and Jules Tuman). These
@@ -107,7 +114,7 @@ const AboutPage = ({ data }) => (
       </div>
     </div>
   </React.Fragment>
-)
+)}
 
 export const pageQuery = graphql`
   query About {
