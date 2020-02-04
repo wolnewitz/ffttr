@@ -20,14 +20,9 @@ const AboutPage = ({ data }) => {
         />
         <div className={styles.heroTextWrapper}>
           <h1 className={styles.headline}>About Us</h1>
-          <div className={styles.address1}>10173 150th Court North</div>
-          <div className={styles.address2}>Jupiter, Florida 33478</div>
-          <a href="tel: 1-5616625516" className={styles.phone}>
-            561-662-5516
-          </a>
-          <div className={styles.email}>
+          <a href="mailto:firefighterstotherescue@comcast.net" className={styles.email}>
             firefighterstotherescue@comcast.net
-          </div>
+          </a>
         </div>
       </div>
       <div className={styles.quoteSection}>

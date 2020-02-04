@@ -127,6 +127,7 @@
 }
 
 .address1, .address2, .phone, .email {
+  display: block;
   line-height: 1.56;
   color: #ffffff;
   text-align: center;
