@@ -9,7 +9,7 @@ const Header = ({ navData, heroData }) => {
       <div className={styles.heroImage}>
         <Navigation data={navData} />
         <div className={styles.heroTextWrapper}>
-          <div className={styles.heroBannerText}>{heroData.headerText}</div>
+          <h1 className={styles.heroBannerText}>{heroData.headerText}</h1>
           <div className={styles.heroInfo}>
             {heroData.headerDescription.headerDescription}
           </div>
