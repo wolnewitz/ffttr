@@ -20,7 +20,10 @@ const AboutPage = ({ data }) => {
         />
         <div className={styles.heroTextWrapper}>
           <h1 className={styles.headline}>About Us</h1>
-          <a href="mailto:firefighterstotherescue@comcast.net" className={styles.email}>
+          <a
+            href="mailto:firefighterstotherescue@comcast.net"
+            className={styles.email}
+          >
             firefighterstotherescue@comcast.net
           </a>
         </div>

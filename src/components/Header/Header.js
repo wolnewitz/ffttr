@@ -13,7 +13,12 @@ const Header = ({ navData, heroData }) => {
           <div className={styles.heroInfo}>
             {heroData.headerDescription.headerDescription}
           </div>
-          <a href={heroData.headerLink.linkUrl} className={styles.heroButton}>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={heroData.headerLink.linkUrl}
+            className={styles.heroButton}
+          >
             {heroData.headerLink.linkText}
           </a>
         </div>
