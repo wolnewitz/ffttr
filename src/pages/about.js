@@ -33,7 +33,7 @@ const AboutPage = ({ data }) => {
           help other public servants in the community.
         </div>
         <div className={styles.subHeaderText}>
-          Firefighter’s to the Rescue, Inc. is 100% volunteer. This means that
+          Firefighters to the Rescue, Inc. is 100% volunteer. This means that
           every penny donated goes toward helping others in need, no salaries or
           overhead. Donations are tax deductible under federal 501c3 status. We
           are governed by a set of by-laws that have been registered with the
