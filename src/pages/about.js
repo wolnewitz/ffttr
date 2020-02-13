@@ -4,10 +4,9 @@ import { graphql } from "gatsby"
 import Navigation from "../components/Navigation"
 import SEO from "../components/seo"
 import styles from "./about.module.css"
-import aboutHeader from "../images/aboutHeader.jpg"
+import aboutHeader from "../images/ffttrBoard.jpeg"
 
 const AboutPage = ({ data }) => {
-  console.log({ data })
   return (
     <React.Fragment>
       <SEO title="About Us" />
