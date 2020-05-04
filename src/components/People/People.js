@@ -32,7 +32,7 @@ const People = ({ peopleData }) => (
             className={styles.largeImage}
             src={person.largeImage.file.url}
           />
-          <div className={`flex ${styles.thumbnailsWrapper}`}>
+              {person.thumbnails && <div className={`flex ${styles.thumbnailsWrapper}`}>
             {person.thumbnails.map(thumbnail => (
               <img
                 alt={thumbnail.description}
@@ -40,7 +40,7 @@ const People = ({ peopleData }) => (
                 src={thumbnail.file.url}
               />
             ))}
-          </div>
+          </div>}
         </div>
       </div>
     ))}
