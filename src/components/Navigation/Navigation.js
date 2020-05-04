@@ -31,6 +31,10 @@ const Navigation = ({ data, transparent }) => {
         <div className={`navText ${styles.topNavText}`}>{data.companyName}</div>
       </div>
       <div className="flex navItems items-center">
+          <NavigationItem
+            lastItem={false}
+            data={{linkUrl: 'https://store.firefighterstotherescue.com', linkText: 'Store'}}
+          />
         {data.navItems.map((navItem, idx) => (
           <NavigationItem
             lastItem={data.navItems.length - 1 === idx}

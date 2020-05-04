@@ -36,7 +36,7 @@
   padding-right: 32px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .navItem:last-child {
     width: 100px;
     border-radius: 75px;
@@ -45,7 +45,9 @@
   .navItem:not(:last-child) {
     padding-right: 16px;
   }
+}
 
+@media (max-width: 500px) {
   .topNav {
     padding: 0 20px;
   }
